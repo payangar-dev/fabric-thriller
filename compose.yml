@@ -39,11 +39,10 @@ services:
       - proxy
     ports:
       - "25566:25565"
-      - "24455:24454/udp"
+      - "24455:24455/udp"
     volumes:
       - ./data:/data
       - ./server.mrpack:/server.mrpack
-    privileged: true
     stdin_open: true
     tty: true
     restart: unless-stopped
